@@ -57,11 +57,11 @@ $ ./mysportconnectAppli --delay 200
 ### Paramètres obligatoires
 
 Les paramètres suivants peuvent être passés à tout programme codé :
-* --help affiche une aide sommaire sur la sortie standard et quitte le programme.
-* -h affiche une aide sommaire sur la sortie standard et quitte le programme.
-* --version affiche la version du programme sur la sortie standard et quitte le programme.
-* -v passe en mode verbose. Les logs sont plus nombreux.
-* -s passe en mode silent. Aucun log n'est effectué.
+* --help affiche une aide sommaire sur la sortie standard et quitte le programme
+* -h affiche une aide sommaire sur la sortie standard et quitte le programme
+* --version affiche la version du programme sur la sortie standard et quitte le programme
+* -v passe en mode verbose. Les logs sont plus nombreux
+* -s passe en mode silent. Aucun log n'est effectué
 
 ## Les variables
 
@@ -582,11 +582,11 @@ Les commentaires sont obligatoires (il n’y en a jamais trop). Ils doivent perm
 ### Règles générales
 
 Règles générales :
-* Placer un espace avant et après les opérateurs et à l'intérieur des parenthèses.
-* Placer un espace avant et après une virgule séparant les paramètres d'une fonction.
-* Laisser les accolades seules sur leur ligne.
-* Placer un espace avant le point-virgule de la fin d’instruction.
-* Placer un espace avant et après les parenthèses sauf en fin de ligne.
+* Placer un espace avant et après les opérateurs et à l'intérieur des parenthèses
+* Placer un espace avant et après une virgule séparant les paramètres d'une fonction
+* Laisser les accolades seules sur leur ligne
+* Placer un espace avant le point-virgule de la fin d’instruction
+* Placer un espace avant et après les parenthèses sauf en fin de ligne
 
 Exemple en C/C++ :
 
@@ -883,7 +883,7 @@ Préférer l’utilisation de **echo** à **print** (car plus rapide à l’exé
 Exemple en PHP :
 
 ```php
-echo 'Hello World !!!' ;
+echo 'Hello World !!!' ;
 ```
 
 ### Utilisation de echo dans des boucles
@@ -1015,9 +1015,9 @@ Les variables PHP qui seront utilisées par Twig sont découpées en 3 parties :
 Exemple en PHP/Twig :
 
 ```php
-varPrint_nameOfVar ;
-varLink_home ;
-varFct_login ;
+varPrint_nameOfVar
+varLink_home
+varFct_login
 ```
 
 ### Liens hypertextes
@@ -1037,7 +1037,7 @@ $varLink_companyFaq = $baseRoot . '/company/faq/ ' ;
 
 echo $twig -> render ( 'index.html' , array ( 'varLink_companyFaq' => $varLink_companyFaq ) ) ;
 
-/\* Twig Template */
+/* Twig Template */
 <a class="test" href="{{ varLink_companyFaq }}"/>
 ```
 
@@ -1064,12 +1064,12 @@ Les mots clefs doivent toujours être en majuscule et alignés.
 Exemple en PHP :
 
 ```php
-$query = SELECT user.fname AS user_fname ,
-                user.name AS user_name ,
-                video.name AS video_name
+$query = 'SELECT user.fname AS user_fname ,
+                user.name AS user_name ,
+                video.name AS video_name
          FROM user
              INNER JOIN video ON user.id = video.user_id
-         WHERE email = contact@apple.com
+         WHERE email = contact@apple.com' ;
 ```
 
 ### Renommage des colonnes
@@ -1159,12 +1159,14 @@ Exemple :
 ...
 
 /* * Typedef */
-/** @brief defining the the audio/video (/data ?) part of a service */ typedef struct
+/** @brief defining the the audio/video (/data ?) part of a service */
+typedef struct
 {
     /** @brief comment about the pid */
     char * pch_nickName ;
 
     /** @brief the pid */ unsigned char uc_age ;
+
 } ratatouille_t ;
 
 /*
@@ -1191,7 +1193,7 @@ signed char checkTeam ( ratatouille_t * pstr_ratatouilleTeam ) ;
 
 ## Les fichiers sources en C/C++
 
-Les fichiers portant l’extension "**.c**" (ou "**.cpp**" pour les fichiers C++) contiennent dans cet ordre :
+Les fichiers portant l’extension ".c" (ou ".cpp" pour les fichiers C++) contiennent dans cet ordre :
 * l'en-tête doxygen
 * la licence
 * l'inclusion du header associé (ex: #include "moduleName.h")
