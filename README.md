@@ -564,10 +564,10 @@ class MyClass
 
 ### Introduction
 
-** Pour des raisons d'uniformisation du logiciel et de clarté, il faut que le logiciel soit écrit de la même manière, en respectant des indentations.**
+Pour des raisons d'uniformisation du logiciel et de clarté, il faut que le logiciel soit écrit de la même manière, en respectant les indentations.
 
 Remarque : Il ne faut pas utiliser de tabulation, pour permettre une meilleure compatibilité entre les différents éditeurs de texte. Les indentations sont constituées de 4 espaces. Astuce : pour les utilisateurs de *vim* les lignes suivantes placées dans le fichier
-"*.vimrc*" de votre HOME permettent d'utiliser la touche tab pour créer des indentations de 4 espaces.
+".vimrc" de votre HOME permettent d'utiliser la touche tab pour créer des indentations de 4 espaces.
 
 ```bash
 set tabstop=4
@@ -1075,7 +1075,7 @@ $query = 'SELECT user.fname AS user_fname ,
 
 Lors de utilisation de plusieurs table il faut renommer les colonnes de la forme suivante : nomDeLaTable_nomDeLaColonne
 
-Exemple en PHP :
+Exemple :
 
 ```php
 user.fname AS user_fname
@@ -1091,7 +1091,7 @@ Le fichier contenant le main d'une application porte le nom de l'exécutable (av
 
 Les fichiers d'entêtes en C/C++
 
-Les fichiers portant l’extension "**.h**" contiennent dans cet ordre :
+Les fichiers portant l’extension ".h" contiennent dans cet ordre :
 * l'en-tête doxygen
 * la licence
 * les instructions préprocesseur #ifndef et #define pour éviter les doubles inclusions (Cf. #ifndef, #define, #endif)
@@ -1237,7 +1237,7 @@ int main ( int i_argc, char ** ppch_argv )
     {
         if ( printTeam ( str_ratatouilleTeam ) < 0 )
         {
-            printf ( "I Don't know how you can be here !!!!\n" ) ;
+            printf ( "I don't know how you can be here !!!!\n" ) ;
         }
         else
         {
@@ -1260,7 +1260,8 @@ int main ( int i_argc, char ** ppch_argv )
     }
     return (int) c_return; }
     void usage ( void ) {
-    printf ( "\nThis is just little program used as example in the WiKi.\n" ) ; printf ( "Usage: checkTeam [ ? | help | NAME]\n\n" ) ;
+    printf ( "\nThis is just little program used as example in the WiKi.\n" ) ;
+    printf ( "Usage: checkTeam [ ? | help | NAME]\n\n" ) ;
     printf ( "\t? or help ==> this help\n" ) ;
     printf ( "\tNAME ==> check if NAME is in the team list\n\n" ) ;
 }
@@ -1431,7 +1432,8 @@ enum TABLE_DVB
     SDT = 5 ,
     EIT = 6
 } ;
-DVBTable_t *tpstr_listOfTables [ NB_TABLES ] ; tpstr_listOfTables [ EIT ] = pstr_EITTable ;
+DVBTable_t *tpstr_listOfTables [ NB_TABLES ] ;
+tpstr_listOfTables [ EIT ] = pstr_EITTable ;
 ```
 
 #### Fonction
@@ -1455,3 +1457,6 @@ unsigned char myFunction ( signed short s_flagPMT , unsigned short us_count ) ;
  */
 class MyClass { } ;
 ```
+
+By the way, if you found a typo, please fork and edit this repository. Thank you so much!
+
