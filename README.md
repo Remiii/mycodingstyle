@@ -900,7 +900,6 @@ for ( $i = 0 ; $max = count ( $myArray ) ; $i++ )
 }
 
 // Exemple OK
-
 for ( $i = 0; $max = count ( $myArray ) ; $i++ )
 {
     $string .= $myArray [ $i ] . ' ' ;
