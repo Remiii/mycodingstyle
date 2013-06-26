@@ -6,6 +6,24 @@ TODO : traduction en Anglais.
 
 Ce document présente la norme de codage mise en place pour mes projets. Non exhaustif, il est important que toute personne développant du logiciel lise ce document afin de satisfaire à une volonté d’uniformiser au maximum les codes développés pour mes projets. Le but étant qu’ils soient maintenables par un maximum de personnes et surtout réutilisable le plus simplement (et donc rapidement) possible. Le respect de cette norme fera l’objet de lectures de codes. Tout code écrit pour mes projets devra respecter cette norme pour pouvoir être intégré.
 
+## Table of content
+
+* Général
+* Passage de paramètre aux programmes
+* Les variables
+* Les fonctions
+* Les classes
+* Mise en forme du code
+* Remarques complémentaires sur le C/C++
+* Remarques complémentaires sur l'HTML
+* Remarques complémentaires sur le PHP
+* Remarques complémentaires sur Symfony2
+* Remarques complémentaires sur PHP/Twig
+* Remarques complémentaires sur les BDD el le SQL
+* Les fichiers
+* Organisation des fichiers en C/C++
+* Génération automatique de la documentation
+
 ## Général
 
 Toute personne amenée à développer du code pour mes projets devra avoir pris connaissance de ce document et en avoir fait une lecture complète. En effet, afin de toujours conserver la possibilité de travailler à plusieurs sur un même code, il est préférable d’imposer certaines règles. Cependant elles ne doivent pas être une contrainte et dans certains cas, on admettra que, le bon sens prenne le pas sur ces dernières.
