@@ -1,5 +1,14 @@
 # myCodingStyle
 
+```
+                    ______          ___             _____ __        __
+   ____ ___  __  __/ ____/___  ____/ (_)___  ____ _/ ___// /___  __/ /__
+  / __ `__ \/ / / / /   / __ \/ __  / / __ \/ __ `/\__ \/ __/ / / / / _ \
+ / / / / / / /_/ / /___/ /_/ / /_/ / / / / / /_/ /___/ / /_/ /_/ / /  __/
+/_/ /_/ /_/\__, /\____/\____/\__,_/_/_/ /_/\__, //____/\__/\__, /_/\___/
+          /____/                          /____/          /____/
+```
+
 TODO : traduction en Anglais.
 
 ## Introduction
@@ -221,6 +230,12 @@ Pour une meilleure lisibilité :
 * Le nom d’une constante sera écrit en majuscules (précédé de son type) (ex : type_CONST)
 * Le nom d’une variable globale commencera par une majuscule (ex : Variable)
 * Le nom d’une variable locale commencera par une minuscule (ex : variable)
+
+Exemple en C/C++ :
+
+```c
+usigned long ul_sizeOfStack1 = 0 ;
+```
 
 Exemple en PHP :
 
@@ -592,6 +607,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 ```
+
+Vous pouvez égelement regarder mon depot git mydotfile.
 
 Remarque: Pour les Makefiles (en C/C++) le langage impose de ne pas utiliser d'espace pour les indentations. Il faut laisser une indentation entre le bloc et les instructions du même bloc. Il en va de même pour les instructions de contrôle du "C/C++" telles que : "while", "for", "switch", "do..while", "if..else", etc...
 
